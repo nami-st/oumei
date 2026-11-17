@@ -20,10 +20,11 @@ header {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(6px);
