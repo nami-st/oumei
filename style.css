@@ -1,0 +1,312 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "MS PMincho", "Hiragino ProN", serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+nav ul li:not(.nav-btn) a {
+    text-decoration: none;
+    color: #333;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border: 1px solid #333;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+nav ul li.nav-btn a {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #ff9800;
+}
+
+nav ul li.nav-btn a:hover {
+    background-color: #e68a00;
+}
+
+.main-visual {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-text {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color: #333;
+    text-align: left;
+    z-index: 10;
+}
+
+.logo-mark {
+    width: min(550px, 75vw);
+    height: auto;
+}
+
+.university-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.news,
+.intro,
+.faculties-section,
+.campus-life,
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.news h2,
+.intro h2,
+.faculties-section h2,
+.campus-life h2,
+.contact-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.news-list {
+    display: inline-block;
+    text-align: left;
+    margin-top: 0;
+}
+
+.news-item {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.date {
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.content {
+    color: #333;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.intro-image img {
+    width: 350px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.intro-text {
+    text-align: left;
+    width: min(360px, 100%);
+    border: 1px solid #ddd;
+    padding: 20px;
+    min-height: 330px;
+    font-family: "Hiragino kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.gaku-name {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #dbe2ef 0%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #dbe2ef;
+}
+
+.faculties {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.campus-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.campus-item {
+    width: 300px;
+}
+
+.campus-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.campus-item img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.1);
+}
+
+.campus-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+.site-footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        padding: 15px 10px;
+    }
+
+    nav ul li {
+        width: auto;
+    }
+
+    .news,
+    .intro,
+    .faculties-section,
+    .campus-life,
+    .contact-section {
+        padding: 40px 0;
+    }
+
+    .intro-text {
+        min-height: auto;
+    }
+}
